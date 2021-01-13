@@ -59,7 +59,7 @@ void imprimindo_resultado(int distancias[], int n)
         // só atualiza distancia_minima[distancia_minima_atual] se ele flag = 1
         for(k = 0; k < n_vertices; k++) 
         {
-            if(((flag[k] == 1) && matriz_adjacencia[distancia_minima_atual][k] && distancia_minima[distancia_minima_atual]) != INT_MAX)
+            if((flag[k] == 0) && matriz_adjacencia[distancia_minima_atual][k] && distancia_minima[distancia_minima_atual] != INT_MAX)
             {
                 if(distancia_minima[distancia_minima_atual] + matriz_adjacencia[distancia_minima_atual][k] < distancia_minima[k])
                 {
