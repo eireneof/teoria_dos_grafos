@@ -32,9 +32,7 @@ int main() {
             scanf("%d", &grafo[i][j]);
             if (grafo[i][j] == -1) grafo[i][j] = INF;
             else custo_total += grafo[i][j];
-            //printf("%d ", grafo[i][j]);
         }
-        //printf("\n");
         pai[i] = i; // cada vertice será uma arvore independente.
     }
     int custo_arvore = 0;
