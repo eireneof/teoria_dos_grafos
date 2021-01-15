@@ -35,6 +35,7 @@ int main() {
         }
         pai[i] = i; // cada vertice será uma arvore independente.
     }
+    
     int custo_arvore = 0;
     while(n < n_vertices - 1) { // enquanto todos não estiverem na mesma arvore
         int menor = INF, menor_i = INF, menor_j = INF, atual;
